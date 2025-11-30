@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Antelope Photo Label Tool — Tasks</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; margin: 0; background:#f6f7f9; color:#222; }
+    header { background:#2e7d32; color:#fff; padding:16px 20px; display:flex; align-items:center; gap:12px; }
+    header h1 { margin:0; font-size:20px; }
+    header a { color:#fff; text-decoration:underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 16px; }
+    form.filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+    input[type=text], select { padding:8px 10px; border-radius:8px; border:1px solid #ccc; }
+    button, .btn { padding:8px 12px; border-radius:8px; border:1px solid #ccc; background:#fff; cursor:pointer; }
+    .grid { display:grid; grid-template-columns: repeat(1, 1fr); gap:10px; }
+    @media(min-width:700px){ .grid { grid-template-columns: repeat(2, 1fr);} }
+    @media(min-width:1000px){ .grid { grid-template-columns: repeat(3, 1fr);} }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; box-shadow:0 1px 2px rgba(0,0,0,0.04); overflow:hidden; }
+    .card .top { display:flex; gap:12px; padding:12px; }
+    .thumb { width:120px; height:120px; background:#f0f0f0; border-radius:10px; overflow:hidden; flex:0 0 auto; display:flex; align-items:center; justify-content:center; }
+    .thumb img { max-width:100%; max-height:100%; display:block; }
+    .meta { flex:1; min-width:0; }
+    .meta h3 { margin:0 0 6px; font-size:16px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .meta .cat { color:#555; font-size:12px; }
+    .assign { padding:12px; border-top:1px solid #eee; display:flex; gap:8px; align-items:center; }
+    .pager { display:flex; gap:8px; align-items:center; margin:12px 0; }
+    .count { color:#555; font-size:13px; margin-left:auto; }
+  </style>
+  <script>
+    async function assign(taskId, selId){
+      const sel = document.getElementById(selId);
+      const image = sel.value;
+      if(!image){ alert('Pick an image'); return; }
+      const res = await fetch('/assign', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({task_id: taskId, image})});
+      if(res.ok){ location.reload(); } else { alert('Failed to assign'); }
+    }
+    async function unassign(taskId){
+      const res = await fetch('/unassign', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({task_id: taskId})});
+      if(res.ok){ location.reload(); } else { alert('Failed to unassign'); }
+    }
+    function filterSelect(selectId, inputId){
+      const q = document.getElementById(inputId).value.toLowerCase();
+      const sel = document.getElementById(selectId);
+      for (const opt of sel.options){
+        const show = !q || opt.value.toLowerCase().includes(q);
+        opt.hidden = !show;
+      }
+    }
+  </script>
+  </head>
+<body>
+  <header>
+    <h1>Antelope Photo Label Tool — Tasks</h1>
+    <span class="small">Switch to <a href="/">Image view</a></span>
+  </header>
+  <div class="container">
+    <form class="filters" method="get" action="/tasks">
+      <input type="text" name="q" placeholder="Search tasks..." value="{{ q }}">
+      <select name="category">
+        <option value="">All categories</option>
+        {% for c in categories %}
+        <option value="{{ c }}" {% if category==c %}selected{% endif %}>{{ c }}</option>
+        {% endfor %}
+      </select>
+      <button type="submit">Filter</button>
+      <span class="count">Showing {{ tasks|length }} of {{ total }} tasks</span>
+    </form>
+
+    <div class="pager">
+      {% if page>1 %}<a class="btn" href="/tasks?q={{ q }}&category={{ category }}&page={{ page-1 }}">Prev</a>{% endif %}
+      <span>Page {{ page }} / {{ last_page }}</span>
+      {% if page<last_page %}<a class="btn" href="/tasks?q={{ q }}&category={{ category }}&page={{ page+1 }}">Next</a>{% endif %}
+    </div>
+
+    <div class="grid">
+      {% for t in tasks %}
+      <div class="card">
+        <div class="top">
+          <div class="thumb">
+            {% if t.photoURL %}
+              <img src="/{{ t.photoURL }}" alt="thumbnail">
+            {% else %}
+              <span style="color:#888; font-size:12px;">No photo</span>
+            {% endif %}
+          </div>
+          <div class="meta">
+            <h3 title="{{ t.name }}">{{ t.name }}</h3>
+            <div class="cat">{{ t.category }} • {{ t.points }} pts • ID {{ t.id }}</div>
+            {% if t.photoURL %}<div style="font-size:12px; color:#666; margin-top:6px;">{{ t.photoURL }}</div>{% endif %}
+          </div>
+        </div>
+        <div class="assign">
+          <input type="text" id="f{{t.id}}" placeholder="Filter images..." oninput="filterSelect('s{{t.id}}','f{{t.id}}')">
+          <select id="s{{t.id}}">
+            <option value="">Select image…</option>
+            {% for img in images %}
+            <option value="{{ img }}">{{ img }}</option>
+            {% endfor %}
+          </select>
+          <button onclick="assign('{{t.id}}','s{{t.id}}')" type="button">Assign</button>
+          {% if t.photoURL %}<button onclick="unassign('{{t.id}}')" type="button">Unassign</button>{% endif %}
+          <a class="btn" target="_blank" href="/{{ t.photoURL }}">Open</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="pager" style="margin-top:12px;">
+      {% if page>1 %}<a class="btn" href="/tasks?q={{ q }}&category={{ category }}&page={{ page-1 }}">Prev</a>{% endif %}
+      <span>Page {{ page }} / {{ last_page }}</span>
+      {% if page<last_page %}<a class="btn" href="/tasks?q={{ q }}&category={{ category }}&page={{ page+1 }}">Next</a>{% endif %}
+    </div>
+
+  </div>
+</body>
+</html>
+

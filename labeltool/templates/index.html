@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Antelope Photo Label Tool — Images</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif; margin: 0; background:#f6f7f9; color:#222; }
+    header { background:#2e7d32; color:#fff; padding:16px 20px; display:flex; align-items:center; gap:12px; }
+    header h1 { margin:0; font-size:20px; }
+    header a { color:#fff; text-decoration:underline; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 16px; }
+    form.filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
+    input[type=text], select { padding:8px 10px; border-radius:8px; border:1px solid #ccc; }
+    button, .btn { padding:8px 12px; border-radius:8px; border:1px solid #ccc; background:#fff; cursor:pointer; }
+    .grid { display:grid; grid-template-columns: repeat(2, 1fr); gap:12px; }
+    @media(min-width:900px){ .grid { grid-template-columns: repeat(4, 1fr);} }
+    .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; box-shadow:0 1px 2px rgba(0,0,0,0.04); overflow:hidden; }
+    .thumb { aspect-ratio: 1/1; width:100%; background:#f0f0f0; display:flex; align-items:center; justify-content:center; }
+    .thumb img { max-width:100%; max-height:100%; display:block; }
+    .meta { padding:10px; border-top:1px solid #eee; font-size:13px; color:#444; }
+    .assign { padding:10px; border-top:1px solid #eee; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+    .assign input[type=text] { flex:1; min-width:180px; }
+    .small { font-size:12px; color:#666; }
+    .row { display:flex; gap:8px; align-items:center; }
+    .count { color:#555; font-size:13px; margin-left:auto; }
+    .pager { display:flex; gap:8px; align-items:center; margin:12px 0; }
+  </style>
+  <script>
+    let TASKS = {{ tasks|tojson }};
+    function filterTasksOptions(inputEl, listId){
+      const q = inputEl.value.toLowerCase();
+      const list = document.getElementById(listId);
+      list.innerHTML = '';
+      const filtered = TASKS.filter(t => !q || t.label.toLowerCase().includes(q)).slice(0, 50);
+      for(const t of filtered){
+        const opt = document.createElement('option');
+        opt.value = t.id;
+        opt.label = t.label;
+        list.appendChild(opt);
+      }
+    }
+    async function assignImage(imgName, inputId){
+      const inp = document.getElementById(inputId);
+      const taskId = inp.value.trim();
+      if(!taskId){ alert('Enter a Task ID (choose from suggestions)'); return; }
+      const res = await fetch('/assign_image', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({image: imgName, task_id: taskId, exclusive: true})});
+      if(res.ok){ location.reload(); } else { alert('Failed to assign'); }
+    }
+    async function clearImage(imgName){
+      const res = await fetch('/clear_image', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({image: imgName})});
+      if(res.ok){ location.reload(); } else { alert('Failed to clear'); }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Antelope Photo Label Tool — Images</h1>
+    <span class="small">Switch to <a href="/tasks">Task view</a></span>
+  </header>
+  <div class="container">
+    <form class="filters" method="get" action="/">
+      <input type="text" name="q" placeholder="Search filenames..." value="{{ q }}">
+      <select name="assigned">
+        <option value="all" {% if assigned=='all' %}selected{% endif %}>All</option>
+        <option value="yes" {% if assigned=='yes' %}selected{% endif %}>Assigned only</option>
+        <option value="no" {% if assigned=='no' %}selected{% endif %}>Unassigned only</option>
+      </select>
+      <button type="submit">Filter</button>
+      <span class="count">Showing {{ images|length }} of {{ total }} images</span>
+    </form>
+
+    <div class="pager">
+      {% if page>1 %}<a class="btn" href="?q={{ q }}&assigned={{ assigned }}&page={{ page-1 }}">Prev</a>{% endif %}
+      <span>Page {{ page }} / {{ last_page }}</span>
+      {% if page<last_page %}<a class="btn" href="?q={{ q }}&assigned={{ assigned }}&page={{ page+1 }}">Next</a>{% endif %}
+    </div>
+
+    <div class="grid">
+      {% for rec in images %}
+      <div class="card">
+        <a class="thumb" href="/images/antelope/{{ rec.name }}" target="_blank" title="Open full image">
+          <img src="/images/antelope/{{ rec.name }}" alt="{{ rec.name }}">
+        </a>
+        <div class="meta">
+          <div class="row"><strong>{{ rec.name }}</strong></div>
+          {% if rec.assigned_to and rec.assigned_to|length>0 %}
+            <div class="small">Assigned to:
+              {% for t in rec.assigned_to %}
+                <div>#{{ t.id }} • {{ t.category }} • {{ t.name }}</div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div class="small" style="color:#999;">Unassigned</div>
+          {% endif %}
+        </div>
+        <div class="assign">
+          <input type="text" id="ti{{ loop.index }}" placeholder="Type to search tasks (ID or text)" oninput="filterTasksOptions(this,'dl{{ loop.index }}')" list="dl{{ loop.index }}">
+          <datalist id="dl{{ loop.index }}"></datalist>
+          <button type="button" onclick="assignImage('{{ rec.name }}','ti{{ loop.index }}')">Assign to task</button>
+          {% if rec.assigned_to and rec.assigned_to|length>0 %}
+            <button type="button" onclick="clearImage('{{ rec.name }}')">Clear assignment</button>
+          {% endif %}
+          <a class="btn" target="_blank" href="/images/antelope/{{ rec.name }}">Open</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="pager" style="margin-top:12px;">
+      {% if page>1 %}<a class="btn" href="?q={{ q }}&assigned={{ assigned }}&page={{ page-1 }}">Prev</a>{% endif %}
+      <span>Page {{ page }} / {{ last_page }}</span>
+      {% if page<last_page %}<a class="btn" href="?q={{ q }}&assigned={{ assigned }}&page={{ page+1 }}">Next</a>{% endif %}
+    </div>
+
+  </div>
+</body>
+</html>
+

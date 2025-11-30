@@ -1,51 +1,11 @@
-const cacheName = 'pwa-cache-v1';
+const cacheName = 'pwa-cache-v2';
 const urlsToCache = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/app.js',
-    '/favicon.ico',
-    '/images/cat.png',
-    '/images/bald_eagle.png',
-    '/images/biltong_vs_jerky.webp',
-    '/images/boba_tea.webp',
-    '/images/bushtit.png',
-    '/images/chat_to_neighbor.webp',
-    '/images/chickadee.png',
-    '/images/cool_rock.webp',
-    '/images/cool_treat.webp',
-    '/images/crow.png',
-    '/images/disappointed_junco.webp',
-    '/images/feed_rue_bunny.webp',
-    '/images/find_sculpture.webp',
-    '/images/find_something_free.webp',
-    '/images/food_carts.webp',
-    '/images/freddies_frozen_food.webp',
-    '/images/gain_2_pounds.webp',
-    '/images/house_finch.png',
-    '/images/hug_tree.webp',
-    '/images/hummingbird.png',
-    '/images/junco.png',
-    '/images/lesser_goldfinch.png',
-    '/images/little_free_library.webp',
-    '/images/northern_flicker.png',
-    '/images/racoon.png',
-    '/images/ride_scooter.webp',
-    '/images/robin.png',
-    '/images/salt_water_taffy.webp',
-    '/images/scrubjay.png',
-    '/images/smell_double_delight.webp',
-    '/images/smell_rose.webp',
-    '/images/song_sparrow.png',
-    '/images/starling.png',
-    '/images/steal_berry.webp',
-    '/images/take_the_bus.webp',
-    '/images/tastiest_thai.webp',
-    '/images/touch_ocean.webp',
-    '/images/towhee.png',
-    '/images/try_new_coffee_shop.webp',
-    '/images/visit_local_park.webp',
-    '/images/vulture.png',
+    './',
+    'index.html',
+    'styles.css',
+    'app.js',
+    'manifest.json',
+    'favicon.ico',
 ];
 
 self.addEventListener('install', event => {
@@ -57,9 +17,44 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
+    const req = event.request;
+    const url = new URL(req.url);
+    // Only handle GET
+    if (req.method !== 'GET') return;
+
+    // Network-first for data to avoid stale tasks
+    if (url.pathname.includes('/data/')) {
+        event.respondWith(
+            fetch(req).then(res => {
+                if (res.ok) {
+                    const clone = res.clone();
+                    caches.open(cacheName).then(c => c.put(req, clone));
+                }
+                return res;
+            }).catch(() => caches.match(req))
+        );
+        return;
+    }
+
+    // Cache-first for app shell and images
     event.respondWith(
-        caches.match(event.request).then(response => {
-            return response || fetch(event.request);
+        caches.match(req).then(cached => {
+            if (cached) return cached;
+            return fetch(req).then(res => {
+                if ((url.pathname.includes('/images/')) && res.ok) {
+                    const clone = res.clone();
+                    caches.open(cacheName).then(c => c.put(req, clone));
+                }
+                return res;
+            });
         })
+    );
+});
+
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys().then(keys => Promise.all(
+            keys.filter(k => k !== cacheName).map(k => caches.delete(k))
+        ))
     );
 });

@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "1",
+    "name": "Stroke a cat",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "2",
+    "name": "Catch a fish",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "3",
+    "name": "Find a frog",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "4",
+    "name": "Feed an elephant",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "5",
+    "name": "Sketch a giraffe",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "6",
+    "name": "Find a spider that is smaller than your thumb nail",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "7",
+    "name": "Run through a sprinkler spray",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "8",
+    "name": "Watch a bee collecting nectar or pollen",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "9",
+    "name": "Smile and say “Hello” to a complete stranger.",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "10",
+    "name": "Find out the name of one of the cooks.",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "11",
+    "name": "Chat to a stranger your own age and ask them where they come from.",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "12",
+    "name": "Watch a sunrise.",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "13",
+    "name": "Imitate a bird call",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "14",
+    "name": "Pick up ten pieces of litter and put them in a bin",
+    "description": "",
+    "points": 10,
+    "category": "Challenges",
+    "photoURL": ""
+  },
+  {
+    "id": "15",
+    "name": "Elephant",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image1.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Giraffe",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image2.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Rhino",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image3.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Lion",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "19",
+    "name": "Zebra",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image4.jpeg"
+  },
+  {
+    "id": "20",
+    "name": "Wildebeest",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image16.jpg"
+  },
+  {
+    "id": "21",
+    "name": "Kudu cow",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image5.jpg"
+  },
+  {
+    "id": "22",
+    "name": "Kudu bull",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image6.jpg"
+  },
+  {
+    "id": "23",
+    "name": "Impala",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "24",
+    "name": "Wart hog",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "25",
+    "name": "Steenbok",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image7.jpg"
+  },
+  {
+    "id": "26",
+    "name": "Duiker",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "27",
+    "name": "Greater galago",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image8.jpg"
+  },
+  {
+    "id": "28",
+    "name": "Lesser galago",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image9.jpg"
+  },
+  {
+    "id": "29",
+    "name": "Vervet monkey",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image10.jpg"
+  },
+  {
+    "id": "30",
+    "name": "Scrub hare",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image11.jpg"
+  },
+  {
+    "id": "31",
+    "name": "Banded mongoose",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image12.jpg"
+  },
+  {
+    "id": "32",
+    "name": "Any bat",
+    "description": "",
+    "points": 5,
+    "category": "Mammal sightings",
+    "photoURL": "images/antelope/image13.jpg"
+  },
+  {
+    "id": "33",
+    "name": "An animal grooming another animal",
+    "description": "",
+    "points": 10,
+    "category": "Mammal action",
+    "photoURL": ""
+  },
+  {
+    "id": "34",
+    "name": "A baby monkey riding underneath its mother.",
+    "description": "",
+    "points": 10,
+    "category": "Mammal action",
+    "photoURL": "images/antelope/image14.jpg"
+  },
+  {
+    "id": "35",
+    "name": "An animal doing a poo.",
+    "description": "",
+    "points": 10,
+    "category": "Mammal action",
+    "photoURL": "images/antelope/image15.jpg"
+  },
+  {
+    "id": "36",
+    "name": "A wildebeest pawing the ground.",
+    "description": "",
+    "points": 10,
+    "category": "Mammal action",
+    "photoURL": ""
+  },
+  {
+    "id": "37",
+    "name": "A giraffe drinking",
+    "description": "",
+    "points": 10,
+    "category": "Mammal action",
+    "photoURL": ""
+  },
+  {
+    "id": "38",
+    "name": "An animal chasing another animal",
+    "description": "",
+    "points": 10,
+    "category": "Mammal action",
+    "photoURL": ""
+  },
+  {
+    "id": "39",
+    "name": "Pied kingfisher",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image17.jpg"
+  },
+  {
+    "id": "40",
+    "name": "Giant king fisher",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image18.jpg"
+  },
+  {
+    "id": "41",
+    "name": "Malachite kingfisher",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image19.jpg"
+  },
+  {
+    "id": "42",
+    "name": "Goliath heron",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image22.jpg"
+  },
+  {
+    "id": "43",
+    "name": "Black-headed heron",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image21.jpg"
+  },
+  {
+    "id": "44",
+    "name": "Grey heron",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "45",
+    "name": "Purple heron",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image20.jpg"
+  },
+  {
+    "id": "46",
+    "name": "Squacco heron",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image23.jpg"
+  },
+  {
+    "id": "47",
+    "name": "Black egret",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image24.jpg"
+  },
+  {
+    "id": "48",
+    "name": "Great white egret",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "49",
+    "name": "Little egret",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image25.jpg"
+  },
+  {
+    "id": "50",
+    "name": "Cattle egret",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image26.jpg"
+  },
+  {
+    "id": "51",
+    "name": "Reed cormorant",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "52",
+    "name": "White-breasted cormorant",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image28.jpg"
+  },
+  {
+    "id": "53",
+    "name": "Black crake",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image29.jpg"
+  },
+  {
+    "id": "54",
+    "name": "African jacana",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image30.jpg"
+  },
+  {
+    "id": "55",
+    "name": "Moorhen",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image31.jpg"
+  },
+  {
+    "id": "56",
+    "name": "Lesser moorhen",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image32.jpg"
+  },
+  {
+    "id": "57",
+    "name": "African black duck",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image33.jpg"
+  },
+  {
+    "id": "58",
+    "name": "Knob-billed duck",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image34.jpg"
+  },
+  {
+    "id": "59",
+    "name": "White-faced whistling duck",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image35.jpg"
+  },
+  {
+    "id": "60",
+    "name": "Red-billed teal",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image36.jpg"
+  },
+  {
+    "id": "61",
+    "name": "Egyptian goose",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image37.jpg"
+  },
+  {
+    "id": "62",
+    "name": "Sacred ibis",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image38.jpg"
+  },
+  {
+    "id": "63",
+    "name": "Blacksmith lapwing",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "64",
+    "name": "White-crowned lapwing",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image39.jpg"
+  },
+  {
+    "id": "65",
+    "name": "Crowned lapwing",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image40.jpg"
+  },
+  {
+    "id": "66",
+    "name": "Three-banded lapwing",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image41.jpg"
+  },
+  {
+    "id": "67",
+    "name": "Broad-billed roller",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image42.jpg"
+  },
+  {
+    "id": "68",
+    "name": "Lilac-breasted roller",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image43.jpg"
+  },
+  {
+    "id": "69",
+    "name": "Any starling",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image44.jpg"
+  },
+  {
+    "id": "70",
+    "name": "Green woodhoopoe",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image45.jpg"
+  },
+  {
+    "id": "71",
+    "name": "African hoopoe",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image46.png"
+  },
+  {
+    "id": "72",
+    "name": "Ostrich",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "73",
+    "name": "Kori bustard",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image47.jpg"
+  },
+  {
+    "id": "74",
+    "name": "Ground hornbill",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image48.jpg"
+  },
+  {
+    "id": "75",
+    "name": "Black-collared barbet",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image49.jpg"
+  },
+  {
+    "id": "76",
+    "name": "Crested barbet",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image50.jpg"
+  },
+  {
+    "id": "77",
+    "name": "Purple-crested turaco",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image51.jpg"
+  },
+  {
+    "id": "78",
+    "name": "Grey go-away bird",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image52.jpg"
+  },
+  {
+    "id": "79",
+    "name": "Arrow-marked babbler",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image53.jpg"
+  },
+  {
+    "id": "80",
+    "name": "Blue waxbill",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image54.jpg"
+  },
+  {
+    "id": "81",
+    "name": "Brownbul",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image55.jpg"
+  },
+  {
+    "id": "82",
+    "name": "Any woodpecker",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image56.jpg"
+  },
+  {
+    "id": "83",
+    "name": "Any flycatcher",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image57.jpg"
+  },
+  {
+    "id": "84",
+    "name": "Any dove",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "85",
+    "name": "Any weaver",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image59.jpg"
+  },
+  {
+    "id": "86",
+    "name": "Ant sunbird",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image58.jpeg"
+  },
+  {
+    "id": "87",
+    "name": "Any bee-eater",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image60.jpeg"
+  },
+  {
+    "id": "88",
+    "name": "Any swallow",
+    "description": "",
+    "points": 5,
+    "category": "Bird sightings",
+    "photoURL": "images/antelope/image61.jpg"
+  },
+  {
+    "id": "89",
+    "name": "A kingfisher diving into the water",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image62.jpg"
+  },
+  {
+    "id": "90",
+    "name": "A kingfisher catching a fish",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image63.jpg"
+  },
+  {
+    "id": "91",
+    "name": "A heron catching a fish",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image64.jpg"
+  },
+  {
+    "id": "92",
+    "name": "A fish eagle catching a fish",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image65.jpg"
+  },
+  {
+    "id": "93",
+    "name": "A lilac-breasted roller doing a loop-the-loop",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image66.jpg"
+  },
+  {
+    "id": "94",
+    "name": "Any bird feeding its chicks",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image67.jpg"
+  },
+  {
+    "id": "95",
+    "name": "A bird going into a hole in a tree",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": ""
+  },
+  {
+    "id": "96",
+    "name": "A lapwing dive-bombing a threat",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image68.jpg"
+  },
+  {
+    "id": "97",
+    "name": "A cormorant drying its wings",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image69.jpg"
+  },
+  {
+    "id": "98",
+    "name": "A black egret spreading its wings like an umbrella",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image70.jpg"
+  },
+  {
+    "id": "99",
+    "name": "A bird soaring without flapping its wings",
+    "description": "",
+    "points": 10,
+    "category": "Bird action",
+    "photoURL": "images/antelope/image71.jpg"
+  },
+  {
+    "id": "100",
+    "name": "Learn the difference between a male and a female fish eagle call.",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "101",
+    "name": "Learn the difference between a male and a female Egyptian goose call.",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "102",
+    "name": "Hear a woodpecker knocking on wood.",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "103",
+    "name": "Hear a green woodhoopoe",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "104",
+    "name": "Hear a crested barbet",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "105",
+    "name": "Hear a black-collared barbet",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "106",
+    "name": "Hear a white-browed robin chat calling",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "107",
+    "name": "Hear an arrow-marked babbler",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "108",
+    "name": "Hear an owl",
+    "description": "",
+    "points": 5,
+    "category": "Bird songs",
+    "photoURL": ""
+  },
+  {
+    "id": "109",
+    "name": "Any snake",
+    "description": "",
+    "points": 5,
+    "category": "Reptile sightings",
+    "photoURL": "images/antelope/image72.jpg"
+  },
+  {
+    "id": "110",
+    "name": "Tree agama",
+    "description": "",
+    "points": 5,
+    "category": "Reptile sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "111",
+    "name": "Gecko",
+    "description": "",
+    "points": 5,
+    "category": "Reptile sightings",
+    "photoURL": "images/antelope/image73.jpg"
+  },
+  {
+    "id": "112",
+    "name": "Lizard",
+    "description": "",
+    "points": 5,
+    "category": "Reptile sightings",
+    "photoURL": "images/antelope/image74.jpg"
+  },
+  {
+    "id": "113",
+    "name": "Chamaeleon",
+    "description": "",
+    "points": 5,
+    "category": "Reptile sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "114",
+    "name": "Water monitor",
+    "description": "",
+    "points": 5,
+    "category": "Reptile sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "115",
+    "name": "Tortoise",
+    "description": "",
+    "points": 5,
+    "category": "Reptile sightings",
+    "photoURL": ""
+  },
+  {
+    "id": "116",
+    "name": "Find a snare",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "117",
+    "name": "Catch a volunteer bunking and sleeping",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "118",
+    "name": "Have a mud bath",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "119",
+    "name": "Shovel dung",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "120",
+    "name": "Feed an elephant",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "121",
+    "name": "Ride a horse",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "122",
+    "name": "Pick up a ball with your polocrosse racquet",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "123",
+    "name": "Catch a ball in midair with your racquet",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "124",
+    "name": "Learn how to say “Thank you” in Ndebele.",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "125",
+    "name": "Learn how to say “Hello” in three different languages.",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "126",
+    "name": "Sing all the right words for the Chabunga Tribe war cry.",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "127",
+    "name": "Pet a dog.",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "128",
+    "name": "Swim in a dam on horseback",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "129",
+    "name": "Hug an orphan",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "130",
+    "name": "Imitate a lion roaring without being laughed at.",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "131",
+    "name": "Imitate a bird calling.",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "132",
+    "name": "Catch a lizard and wear it as an earring.",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  },
+  {
+    "id": "133",
+    "name": "Play Fire Ball",
+    "description": "",
+    "points": 20,
+    "category": "Volunteers Only",
+    "photoURL": ""
+  }
+]

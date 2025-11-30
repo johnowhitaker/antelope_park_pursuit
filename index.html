@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portland Pursuit</title>
+    <title>Antelope Park Pursuit</title>
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Portland Pursuit</h1>
+            <h1>Antelope Park Pursuit</h1>
             <div id="score">Your Score: 0</div>
+            <div style="margin-top:12px; display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap;">
+                <label style="background:#fff2; padding:6px 10px; border-radius:12px; color:#333; background:white; box-shadow: var(--shadow-1);">
+                    <input type="checkbox" id="incomplete-only" style="margin-right:6px;"> Show incomplete only
+                </label>
+                <button id="reset-progress" style="padding:8px 12px; border-radius:12px; border:none; background:#e53935; color:white; box-shadow: var(--shadow-1); cursor:pointer;">Reset progress</button>
+            </div>
         </div>
         <div id="task-list"></div>
         <div class="footer">
-            <p>Whit's trip 2025! 🌲</p>
+            <p>Antelope Park — Family Challenge 🌿</p>
         </div>
     </div>
     <script src="app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
+            navigator.serviceWorker.register('service-worker.js')
                 .then(reg => console.log('Service Worker registered'))
                 .catch(err => console.log('Service Worker registration failed:', err));
         }

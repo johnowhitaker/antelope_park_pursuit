@@ -1,6 +1,6 @@
 {
-    "short_name": "Portland Pursuit",
-    "name": "Portland Pursuit",
+    "short_name": "Antelope Pursuit",
+    "name": "Antelope Park Pursuit",
     "icons": [
         {
             "src": "favicon.ico",
@@ -8,7 +8,7 @@
             "sizes": "256x256"
         }
     ],
-    "start_url": "/portland_pursuit/",
+    "start_url": "/antelope-park-pursuit/",
     "display": "standalone",
     "theme_color": "#ffffff",
     "background_color": "#ffffff"
