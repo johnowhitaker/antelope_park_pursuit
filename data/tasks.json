@@ -157,7 +157,7 @@
     "description": "",
     "points": 5,
     "category": "Mammal sightings",
-    "photoURL": "images/antelope/image16.jpg"
+    "photoURL": ""
   },
   {
     "id": "21",
@@ -285,7 +285,7 @@
     "description": "",
     "points": 10,
     "category": "Mammal action",
-    "photoURL": ""
+    "photoURL": "images/antelope/image16.jpg"
   },
   {
     "id": "37",
@@ -521,7 +521,7 @@
   },
   {
     "id": "66",
-    "name": "Three-banded lapwing",
+    "name": "Three-banded plover",
     "description": "",
     "points": 5,
     "category": "Bird sightings",
@@ -681,7 +681,7 @@
   },
   {
     "id": "86",
-    "name": "Ant sunbird",
+    "name": "Any Sunbird",
     "description": "",
     "points": 5,
     "category": "Bird sightings",
