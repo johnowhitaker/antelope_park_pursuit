@@ -213,7 +213,7 @@ summary:hover {
 .card img {
   width: 80px;
   height: 80px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px;
   margin-right: 20px;
   box-shadow: var(--shadow-1);
@@ -322,6 +322,7 @@ summary:hover {
   .card img {
     width: 60px;
     height: 60px;
+    object-fit: contain;
     margin-right: 16px;
   }
   
