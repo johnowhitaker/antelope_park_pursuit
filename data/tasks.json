@@ -115,7 +115,7 @@
     "id": "15",
     "name": "Elephant",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image1.jpg"
   },
@@ -123,7 +123,7 @@
     "id": "16",
     "name": "Giraffe",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image2.jpg"
   },
@@ -131,7 +131,7 @@
     "id": "17",
     "name": "Rhino",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image3.jpg"
   },
@@ -139,7 +139,7 @@
     "id": "18",
     "name": "Lion",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image92.jpg"
   },
@@ -147,7 +147,7 @@
     "id": "19",
     "name": "Zebra",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image4.jpeg"
   },
@@ -155,7 +155,7 @@
     "id": "20",
     "name": "Wildebeest",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/Wildebeest.webp"
   },
@@ -163,7 +163,7 @@
     "id": "21",
     "name": "Kudu cow",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image5.jpg"
   },
@@ -171,7 +171,7 @@
     "id": "22",
     "name": "Kudu bull",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image6.jpg"
   },
@@ -179,7 +179,7 @@
     "id": "23",
     "name": "Impala",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image90.png"
   },
@@ -187,7 +187,7 @@
     "id": "24",
     "name": "Wart hog",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image91.png"
   },
@@ -195,7 +195,7 @@
     "id": "25",
     "name": "Steenbok",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image7.jpg"
   },
@@ -203,7 +203,7 @@
     "id": "26",
     "name": "Duiker",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/Duiker.webp"
   },
@@ -211,7 +211,7 @@
     "id": "27",
     "name": "Greater galago",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image8.jpg"
   },
@@ -219,7 +219,7 @@
     "id": "28",
     "name": "Lesser galago",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image9.jpg"
   },
@@ -227,7 +227,7 @@
     "id": "29",
     "name": "Vervet monkey",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image10.jpg"
   },
@@ -235,7 +235,7 @@
     "id": "30",
     "name": "Scrub hare",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image11.jpg"
   },
@@ -243,7 +243,7 @@
     "id": "31",
     "name": "Banded mongoose",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image12.jpg"
   },
@@ -251,7 +251,7 @@
     "id": "32",
     "name": "Any bat",
     "description": "",
-    "points": 5,
+    "points": 10,
     "category": "Mammal sightings",
     "photoURL": "images/antelope/image13.jpg"
   },
@@ -931,7 +931,7 @@
     "id": "117",
     "name": "Catch a volunteer bunking and sleeping",
     "description": "",
-    "points": 20,
+    "points": 10,
     "category": "Volunteers Only",
     "photoURL": ""
   },
@@ -947,7 +947,7 @@
     "id": "119",
     "name": "Shovel dung",
     "description": "",
-    "points": 20,
+    "points": 10,
     "category": "Volunteers Only",
     "photoURL": ""
   },
@@ -963,7 +963,7 @@
     "id": "121",
     "name": "Ride a horse",
     "description": "",
-    "points": 20,
+    "points": 10,
     "category": "Volunteers Only",
     "photoURL": ""
   },
@@ -971,7 +971,7 @@
     "id": "122",
     "name": "Pick up a ball with your polocrosse racquet",
     "description": "",
-    "points": 20,
+    "points": 10,
     "category": "Volunteers Only",
     "photoURL": ""
   },
@@ -1043,7 +1043,7 @@
     "id": "131",
     "name": "Imitate a bird calling.",
     "description": "",
-    "points": 20,
+    "points": 10,
     "category": "Volunteers Only",
     "photoURL": ""
   },
@@ -1051,7 +1051,7 @@
     "id": "132",
     "name": "Catch a lizard and wear it as an earring.",
     "description": "",
-    "points": 20,
+    "points": 30,
     "category": "Volunteers Only",
     "photoURL": ""
   },
