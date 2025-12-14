@@ -157,7 +157,7 @@
     "description": "",
     "points": 5,
     "category": "Mammal sightings",
-    "photoURL": ""
+    "photoURL": "images/antelope/image75.jpg"
   },
   {
     "id": "21",
@@ -301,7 +301,7 @@
     "description": "",
     "points": 10,
     "category": "Mammal action",
-    "photoURL": ""
+    "photoURL": "images/antelope/image76.jpg"
   },
   {
     "id": "39",
@@ -333,7 +333,7 @@
     "description": "",
     "points": 5,
     "category": "Bird sightings",
-    "photoURL": "images/antelope/image22.jpg"
+    "photoURL": "images/antelope/image20.jpg"
   },
   {
     "id": "43",
@@ -357,7 +357,7 @@
     "description": "",
     "points": 5,
     "category": "Bird sightings",
-    "photoURL": "images/antelope/image20.jpg"
+    "photoURL": "images/antelope/image22.jpg"
   },
   {
     "id": "46",
@@ -901,7 +901,7 @@
     "description": "",
     "points": 5,
     "category": "Reptile sightings",
-    "photoURL": ""
+    "photoURL": "images/antelope/image79.png"
   },
   {
     "id": "114",
@@ -909,7 +909,7 @@
     "description": "",
     "points": 5,
     "category": "Reptile sightings",
-    "photoURL": ""
+    "photoURL": "images/antelope/image80.png"
   },
   {
     "id": "115",
@@ -917,7 +917,7 @@
     "description": "",
     "points": 5,
     "category": "Reptile sightings",
-    "photoURL": ""
+    "photoURL": "images/antelope/image81.png"
   },
   {
     "id": "116",
